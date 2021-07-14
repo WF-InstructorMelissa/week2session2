@@ -1,0 +1,25 @@
+body {
+    background-color: #5969af;
+    text-align: center;
+}
+img {
+    max-width: 250px;
+}
+a {
+    padding: 1em;
+}
+#main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em;
+}
+.octocats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}

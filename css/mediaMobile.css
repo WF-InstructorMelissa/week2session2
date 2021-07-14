@@ -1,0 +1,47 @@
+body {
+    background-color: #5969af;
+    text-align: center;
+}
+img {
+    width: 100px;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+a {
+    padding: 2em;
+}
+.octocat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 330px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 700px) {
+    .main {
+        width: auto;
+        flex-wrap: wrap;
+        background-color: purple;
+    }
+}
