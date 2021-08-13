@@ -4,7 +4,6 @@
 
 body {
     background-color: #5969af;
-    background-image: url('../images/shley-tree-1.png');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,11 +14,11 @@ img {
 }
 header, footer, #main {
     width: 95%;
-    background-color: #ffe4c48a;
+    background-color: #ffe4c4;
     min-height: 100px;
     margin: 20px;
 }
-#main, header, footer {
+#main, header, footer, .column {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +40,6 @@ hr {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
 button {
     border-radius: 50%;
@@ -103,4 +101,15 @@ button {
 .gameRestart {
     border-radius: 0;
     margin: 1em;
+}
+@media only screen and (max-width: 1500px) {
+    .section {
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .newSection {
+        flex-wrap: wrap;
+        background-color: #ffe4c4;
+    }
 }
