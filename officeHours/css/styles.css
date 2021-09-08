@@ -1,0 +1,30 @@
+img {
+    max-width: 300px;
+}
+header, .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    color: black;
+    text-decoration: none;
+    margin: 0 1em;
+}
+header img {
+    margin: 1em;
+}
+p {
+    width: 300px;
+    margin: 1em;
+}
+.reverse {
+    flex-direction: row-reverse;
+}

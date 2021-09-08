@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body img {
+  max-width: 300px;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body header img {
+  margin: 1em;
+}
+body nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 1em;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body main .row p {
+  width: 300px;
+  margin: 1em;
+}
+body main .reverse {
+  flex-direction: row-reverse;
+}
