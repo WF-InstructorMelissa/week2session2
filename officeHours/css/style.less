@@ -1,31 +1,41 @@
-body {
+.flexrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.flexcolumn {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@bg: #2a4b89;
+@nav: #ffc0cb;
+@800: ~"only screen and (max-width: 800px)";
+
+
+body {
+    .flexcolumn();
+    background-color: @bg;
 
     img {
         max-width: 300px;
     }
 
     header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        .flexrow();
 
         img {
             margin: 1em;
         }
     }
     nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        .flexrow();
+        background-color: @nav;
 
         a {
-            color: black;
+            color: @bg;
             text-decoration: none;
             margin: 0 1em;
         }
@@ -49,6 +59,16 @@ body {
         }
         .reverse {
             flex-direction: row-reverse;
+        }
+    }
+}
+
+@media @800 {
+    body {
+        main {
+            .row {
+                flex-direction: column;
+            }
         }
     }
 }

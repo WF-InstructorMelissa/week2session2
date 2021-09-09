@@ -14,7 +14,7 @@ img {
 }
 header, footer, #main {
     width: 95%;
-    background-color: #ffe4c4;
+    background-color: #ffe4c48a;
     min-height: 100px;
     margin: 20px;
 }

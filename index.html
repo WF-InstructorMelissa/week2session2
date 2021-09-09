@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- <script src='./js/script.js' defer></script> -->
     <link rel='icon' type='image/png' href='./images/computerOctocat.png'>
     <title>Octocat</title>
 </head>
 <body>
-    <header onclick='bgChange(this)''>
+    <header onclick='bgChange(this)'>
         <h1>All About Octocats</h1>
         <a href='https://myoctocat.com/' target="_blank">Make your own</a>
         <a href='./ticTacToe.html'>Tic Tac Toe Game</a>
@@ -50,6 +51,47 @@
             </div>
         </div>
     </div>
+    <main>
+        <form name='details'>
+            <div>
+                <label for='name'>Your Name: </label>
+                <input type='text' name='name'>
+            </div>
+            <div>
+                <label for='location'>Your Location:</label>
+                <input type='text' name='location'>
+            </div>
+            <input value='Submit' type='button' onclick="showData()">
+        </form>
+        <h2>Grade Average Calculator</h2>
+        <h3>Please Enter Your Grade For Each Quarter</h3>
+        <table BORDER=2>
+            <tr>
+                <td>Type</td>
+                <td>Grade</td>
+            </tr>
+            <tr>
+                <td>1st Quarter</td>
+                <td><input type="text" id="qtr1" size=2 value=""></td>
+            </tr>
+            <tr>
+                <td>2nd Quarter</td>
+                <td><input type="text" id="qtr2" size=2 value=""></td>
+            </tr>
+            <tr>
+                <td>3rd Quarter</td>
+                <td><input type="text" id="qtr3" size=2 value=""></td>
+            </tr>
+            <tr>
+                <td>4th Quarter</td>
+                <td><input type="text" id="qtr4" size=2 value=""></td>
+            </tr>
+        </table>
+        <input type="button" value="Calculate Your Grade"
+                onclick="calculator()">
+        <hr>
+        <h4 id="outputh4"></h4>
+    </main>
     <footer>
         <p>Created for Coding Dojo</p>
     </footer>

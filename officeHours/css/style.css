@@ -1,8 +1,21 @@
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #2a4b89;
 }
 body img {
   max-width: 300px;
@@ -21,9 +34,10 @@ body nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: #ffc0cb;
 }
 body nav a {
-  color: black;
+  color: #2a4b89;
   text-decoration: none;
   margin: 0 1em;
 }
@@ -45,4 +59,9 @@ body main .row p {
 }
 body main .reverse {
   flex-direction: row-reverse;
+}
+@media only screen and (max-width: 800px) {
+  body main .row {
+    flex-direction: column;
+  }
 }
